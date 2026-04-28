@@ -46,7 +46,6 @@
       margin-bottom: 1.5rem;
     }
 
-    /* DESKTOP */
     .logo-img {
       height: clamp(260px, 35vw, 420px);
       width: auto;
@@ -194,7 +193,7 @@
 
     .email-box {
       background: white;
-      padding: 2.5rem 2rem;
+      padding: 2rem 2rem;
       border-radius: 28px;
       box-shadow: var(--shadow);
       border: 3px solid var(--honey);
@@ -203,43 +202,13 @@
       text-align: center;
     }
 
-    .input-wrapper {
-      position: relative;
-      margin-bottom: 1rem;
+    .email-box h2 {
+      margin-bottom: 0.5rem;
     }
 
-    .input-wrapper i {
-      position: absolute;
-      left: 18px;
-      top: 18px;
-      color: var(--green);
-      opacity: 0.7;
-    }
-
-    .input-wrapper input {
+    .tally-embed {
+      margin-top: 1rem;
       width: 100%;
-      padding: 15px 20px 15px 50px;
-      border-radius: 40px;
-      border: 2px solid #e0e0e0;
-      transition: 0.2s;
-    }
-
-    .input-wrapper input:focus {
-      border-color: var(--green);
-      outline: none;
-    }
-
-    .submit-btn {
-      width: 100%;
-      padding: 15px;
-      border: none;
-      background: var(--green);
-      color: white;
-      border-radius: 40px;
-      font-weight: 600;
-      box-shadow: 0 5px 0 #1e4a12;
-      border: 2px solid #a7c957;
-      cursor: pointer;
     }
 
     footer {
@@ -249,7 +218,6 @@
       color: var(--text-soft);
     }
 
-    /* Social link styling – blue Facebook icon, white F */
     .social-link {
       display: inline-block;
       margin-top: 1rem;
@@ -284,6 +252,7 @@
       .mission-text-overlay { position: static; background: var(--green); }
       .mission-text { max-width: 100%; padding: 1.5rem; }
       .mission-text p { font-size: 0.95rem; }
+      .email-box { padding: 1.5rem; }
     }
   </style>
 </head>
@@ -299,7 +268,7 @@
   <section class="hero">
     <h1>Organic Food, As It Should Be</h1>
     <p>
-      Thoughtfully sourced from British farms - Seasonal fruits and vegetables, pasture raised eggs, freshly milled grain and raw honey.
+      Thoughtfully sourced - seasonal fruits and vegetables, pasture raised eggs, freshly milled grain and raw honey.
     </p>
     <a href="#signup" class="cta">Request early access to our first release</a>
   </section>
@@ -356,17 +325,9 @@
   <section id="signup" class="email-box">
     <h2>Join the List</h2>
     <p class="small">For priority access to our first seasonal release.</p>
-    <form action="https://formspree.io/f/xnjlgyrj" method="POST">
-      <div class="input-wrapper">
-        <i class="fas fa-user"></i>
-        <input type="text" name="name" placeholder="Your name" required>
-      </div>
-      <div class="input-wrapper">
-        <i class="fas fa-envelope"></i>
-        <input type="email" name="email" placeholder="Your email address" required>
-      </div>
-      <button type="submit" class="submit-btn">Join the waiting list →</button>
-    </form>
+    <div class="tally-embed">
+      <iframe data-tally-src="https://tally.so/embed/0QbkYQ?hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="350" frameborder="0" marginheight="0" marginwidth="0" title="Join the list"></iframe>
+    </div>
     <p class="small" style="margin-top:1rem;">We will write occasionally, and only when it matters.</p>
   </section>
 
@@ -379,6 +340,8 @@
   </footer>
 
 </div>
+
+<script async src="https://tally.so/widgets/embed.js"></script>
 
 </body>
 </html>
