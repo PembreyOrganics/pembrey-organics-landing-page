@@ -4,15 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Pembrey Organics · Organic Food, As It Should Be</title>
-
-  <!-- YOUR PERSONAL FAVICON (transparent logo PNG) -->
   <link rel="icon" type="image/png" href="https://i.postimg.cc/ZKf2BMc6/Transparent-Pembrey-organics-Logo.png">
   <link rel="apple-touch-icon" href="https://i.postimg.cc/ZKf2BMc6/Transparent-Pembrey-organics-Logo.png">
   <meta name="theme-color" content="#2d6a1e">
-
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
   <style>
     :root {
       --green: #2d6a1e;
@@ -25,9 +21,7 @@
       --honey: #e8a830;
       --shadow: 0 8px 20px rgba(0,0,0,0.05);
     }
-
     * { margin:0; padding:0; box-sizing:border-box; }
-
     body {
       font-family: 'Inter', sans-serif;
       background: var(--light);
@@ -36,44 +30,20 @@
       -webkit-font-smoothing: antialiased;
       overflow-x: hidden;
     }
-
     .container { max-width: 1100px; margin: auto; padding: 1.5rem; }
-
-    .nav {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-bottom: 1.5rem;
-    }
-
-    .logo-img {
-      height: clamp(260px, 35vw, 420px);
-      width: auto;
-    }
-
+    .nav { display: flex; flex-direction: column; align-items: center; margin-bottom: 1.5rem; }
+    .logo-img { height: clamp(260px, 35vw, 420px); width: auto; }
     .hero {
       text-align: center;
       padding: 4rem 2rem;
       border-radius: 30px;
-      background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.35)),
-      url('https://images.pexels.com/photos/952353/pexels-photo-952353.jpeg');
+      background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.35)), url('https://images.pexels.com/photos/952353/pexels-photo-952353.jpeg');
       background-size: cover;
       background-position: center;
       color: white;
     }
-
-    .hero h1 {
-      font-size: clamp(2.5rem, 5vw, 3.5rem);
-      margin-bottom: 1rem;
-      font-weight: 600;
-    }
-
-    .hero p {
-      max-width: 600px;
-      margin: auto;
-      opacity: 0.95;
-    }
-
+    .hero h1 { font-size: clamp(2.5rem, 5vw, 3.5rem); margin-bottom: 1rem; font-weight: 600; }
+    .hero p { max-width: 600px; margin: auto; opacity: 0.95; }
     .cta {
       display: inline-block;
       margin-top: 2rem;
@@ -87,20 +57,11 @@
       border: 2px solid #a7c957;
       transition: all 0.2s ease;
     }
-
-    .cta:hover {
-      transform: translateY(3px);
-      box-shadow: 0 3px 0 #1e4a12;
-    }
-
+    .cta:hover { transform: translateY(3px); box-shadow: 0 3px 0 #1e4a12; }
     .small { font-size: 0.9rem; color: var(--text-soft); }
-
     .section { margin: 3rem 0; text-align: center; }
-
     .grid { display: grid; gap: 1.5rem; }
-
     .features { grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); }
-
     .card {
       background: white;
       padding: 1.5rem;
@@ -108,9 +69,7 @@
       border: 1px solid var(--green-soft);
       transition: all 0.2s;
     }
-
     .card:hover { border-color: var(--honey); box-shadow: 0 8px 18px rgba(0,0,0,0.08); }
-
     .mission-full {
       margin: 3rem 0;
       width: 100%;
@@ -120,15 +79,7 @@
       box-shadow: var(--shadow);
       background: #efe7db;
     }
-
-    .mission-image {
-      display: block;
-      width: 100%;
-      height: auto;
-      object-fit: contain;
-      border-radius: 20px;
-    }
-
+    .mission-image { display: block; width: 100%; height: auto; object-fit: contain; border-radius: 20px; }
     .mission-text-overlay {
       position: absolute;
       top: 0;
@@ -139,32 +90,14 @@
       align-items: center;
       justify-content: center;
       text-align: center;
-      background: rgba(0, 0, 0, 0.6);
+      background: rgba(0,0,0,0.6);
       border-radius: 20px;
       padding: 1.5rem;
     }
-
-    .mission-text {
-      color: white;
-      max-width: 80%;
-      padding: 1.5rem;
-    }
-
-    .mission-text p {
-      font-size: 1.05rem;
-      line-height: 1.6;
-      margin-bottom: 1rem;
-      text-shadow: 0 1px 2px rgba(0,0,0,0.2);
-    }
-
-    .mission-text p:last-child {
-      margin-bottom: 0;
-    }
-
-    .products { 
-      grid-template-columns: repeat(auto-fit, minmax(180px,1fr)); 
-    }
-
+    .mission-text { color: white; max-width: 80%; padding: 1.5rem; }
+    .mission-text p { font-size: 1.05rem; line-height: 1.6; margin-bottom: 1rem; text-shadow: 0 1px 2px rgba(0,0,0,0.2); }
+    .mission-text p:last-child { margin-bottom: 0; }
+    .products { grid-template-columns: repeat(auto-fit, minmax(180px,1fr)); }
     .product {
       background: white;
       border-radius: 20px;
@@ -174,23 +107,9 @@
       transition: transform 0.2s, border-color 0.2s;
       text-align: center;
     }
-
-    .product div {
-      padding: 1rem;
-    }
-
-    .product:hover {
-      transform: translateY(-6px);
-      border-color: var(--honey);
-    }
-
-    .product img {
-      width: 100%;
-      height: 160px;
-      object-fit: cover;
-      border-bottom: 4px solid var(--green);
-    }
-
+    .product div { padding: 1rem; }
+    .product:hover { transform: translateY(-6px); border-color: var(--honey); }
+    .product img { width: 100%; height: 160px; object-fit: cover; border-bottom: 4px solid var(--green); }
     .email-box {
       background: white;
       padding: 2rem 2rem;
@@ -201,46 +120,19 @@
       margin: 3rem auto;
       text-align: center;
     }
-
-    .email-box h2 {
-      margin-bottom: 0.5rem;
-    }
-
-    .tally-embed {
-      margin-top: 1rem;
-      width: 100%;
-    }
-
-    footer {
-      text-align: center;
-      margin-top: 3rem;
-      font-size: 0.9rem;
-      color: var(--text-soft);
-    }
-
+    .email-box h2 { margin-bottom: 0.5rem; }
+    .tally-embed { margin-top: 1rem; width: 100%; }
+    footer { text-align: center; margin-top: 3rem; font-size: 0.9rem; color: var(--text-soft); }
     .social-link {
       display: inline-block;
       margin-top: 1rem;
       text-decoration: none;
       transition: opacity 0.2s ease;
     }
-    .social-link:hover {
-      opacity: 0.8;
-    }
-    .social-link i {
-      font-size: 1.5rem;
-      margin-right: 0.5rem;
-      vertical-align: middle;
-      color: #1877f2;
-    }
-    .social-link span {
-      color: var(--text-soft);
-      vertical-align: middle;
-    }
-    .social-link:hover span {
-      color: var(--green);
-    }
-
+    .social-link:hover { opacity: 0.8; }
+    .social-link i { font-size: 1.5rem; margin-right: 0.5rem; vertical-align: middle; color: #1877f2; }
+    .social-link span { color: var(--text-soft); vertical-align: middle; }
+    .social-link:hover span { color: var(--green); }
     @media (max-width: 640px) {
       .container { padding: 1rem; }
       .logo-img { height: clamp(260px, 60vw, 360px); }
@@ -256,73 +148,36 @@
     }
   </style>
 </head>
-
 <body>
-
 <div class="container">
-
   <div class="nav">
     <img src="https://i.postimg.cc/ZKf2BMc6/Transparent-Pembrey-organics-Logo.png" class="logo-img" alt="Pembrey Organics">
   </div>
-
   <section class="hero">
     <h1>Organic Food, As It Should Be</h1>
-    <p>
-      Thoughtfully sourced - seasonal fruits and vegetables, pasture raised eggs, freshly milled grain and raw honey.
-    </p>
+    <p>Thoughtfully sourced - seasonal fruits and vegetables, pasture raised eggs, freshly milled grain and raw honey.</p>
     <a href="#signup" class="cta">Request early access to our first release</a>
   </section>
-
   <section class="section grid features">
-    <div class="card">
-      <h3>🌱 Organic by Principle</h3>
-      <p class="small">Grown in living soil, without artificial additives</p>
-    </div>
-    <div class="card">
-      <h3>🐓 Raised on Pasture</h3>
-      <p class="small">Animals reared and nurtured in outdoor spaces</p>
-    </div>
-    <div class="card">
-      <h3>🤝 Carefully Sourced</h3>
-      <p class="small">We partner with farms sharing our welfare standards</p>
-    </div>
+    <div class="card"><h3>🌱 Organic by Principle</h3><p class="small">Grown in living soil, without artificial additives</p></div>
+    <div class="card"><h3>🐓 Raised on Pasture</h3><p class="small">Animals reared and nurtured in outdoor spaces</p></div>
+    <div class="card"><h3>🤝 Carefully Sourced</h3><p class="small">We partner with farms sharing our welfare standards</p></div>
   </section>
-
   <div class="grid products">
-    <div class="product">
-      <img loading="lazy" src="https://images.pexels.com/photos/32515181/pexels-photo-32515181.jpeg" alt="Organic fruits">
-      <div><strong>Fruits</strong><div class="small">Grown for flavour, harvested in season</div></div>
-    </div>
-    <div class="product">
-      <img loading="lazy" src="https://images.pexels.com/photos/533360/pexels-photo-533360.jpeg" alt="Organic vegetables">
-      <div><strong>Vegetables</strong><div class="small">Fresh from fertile soil, selected at their best</div></div>
-    </div>
-    <div class="product">
-      <img loading="lazy" src="https://images.pexels.com/photos/1775043/pexels-photo-1775043.jpeg" alt="Freshly milled bread">
-      <div><strong>Bread</strong><div class="small">Made using freshly milled flour</div></div>
-    </div>
-    <div class="product">
-      <img loading="lazy" src="https://cdn.pixabay.com/photo/2017/01/06/17/49/honey-1958464_1280.jpg" alt="Raw honey">
-      <div><strong>Honey</strong><div class="small">Raw, unprocessed, naturally rich</div></div>
-    </div>
-    <div class="product">
-      <img loading="lazy" src="https://images.pexels.com/photos/29251935/pexels-photo-29251935.jpeg" alt="Pasture raised eggs">
-      <div><strong>Eggs</strong><div class="small">From hens raised on pasture</div></div>
-    </div>
+    <div class="product"><img loading="lazy" src="https://images.pexels.com/photos/32515181/pexels-photo-32515181.jpeg" alt="Organic fruits"><div><strong>Fruits</strong><div class="small">Grown for flavour, harvested in season</div></div></div>
+    <div class="product"><img loading="lazy" src="https://images.pexels.com/photos/533360/pexels-photo-533360.jpeg" alt="Organic vegetables"><div><strong>Vegetables</strong><div class="small">Fresh from fertile soil, selected at their best</div></div></div>
+    <div class="product"><img loading="lazy" src="https://images.pexels.com/photos/1775043/pexels-photo-1775043.jpeg" alt="Freshly milled bread"><div><strong>Bread</strong><div class="small">Made using freshly milled flour</div></div></div>
+    <div class="product"><img loading="lazy" src="https://cdn.pixabay.com/photo/2017/01/06/17/49/honey-1958464_1280.jpg" alt="Raw honey"><div><strong>Honey</strong><div class="small">Raw, unprocessed, naturally rich</div></div></div>
+    <div class="product"><img loading="lazy" src="https://images.pexels.com/photos/29251935/pexels-photo-29251935.jpeg" alt="Pasture raised eggs"><div><strong>Eggs</strong><div class="small">From hens raised on pasture</div></div></div>
   </div>
-
   <div class="mission-full">
     <img class="mission-image" src="https://i.postimg.cc/5tyDnDBS/1.jpg" alt="Rich dark soil held in hands">
-    <div class="mission-text-overlay">
-      <div class="mission-text">
-        <p>We believe good food begins long before it reaches the table.</p>
-        <p>It begins in the soil, in the care given to animals, and in the decisions made by those who produce it.</p>
-        <p>Pembrey Organics exists to provide food that reflects those values — honestly, and without compromise.</p>
-      </div>
-    </div>
+    <div class="mission-text-overlay"><div class="mission-text">
+      <p>We believe good food begins long before it reaches the table.</p>
+      <p>It begins in the soil, in the care given to animals, and in the decisions made by those who produce it.</p>
+      <p>Pembrey Organics exists to provide food that reflects those values — honestly, and without compromise.</p>
+    </div></div>
   </div>
-
-  <!-- SIGNUP SECTION WITH TALLY FORM (name and email fields are defined in Tally) -->
   <section id="signup" class="email-box">
     <h2>Join the List</h2>
     <p class="small">For priority access to our first seasonal release.</p>
@@ -331,18 +186,11 @@
     </div>
     <p class="small" style="margin-top:1rem;">We will write occasionally, and only when it matters.</p>
   </section>
-
   <footer>
     <p>Pembrey Organics — rooted in soil, guided by care.</p>
-    <a href="https://www.facebook.com/profile.php?id=61560648151941" target="_blank" rel="noopener noreferrer" class="social-link">
-      <i class="fab fa-facebook-square"></i>
-      <span>Follow us on Facebook</span>
-    </a>
+    <a href="https://www.facebook.com/profile.php?id=61560648151941" target="_blank" rel="noopener noreferrer" class="social-link"><i class="fab fa-facebook-square"></i><span>Follow us on Facebook</span></a>
   </footer>
-
 </div>
-
 <script async src="https://tally.so/widgets/embed.js"></script>
-
 </body>
 </html>
